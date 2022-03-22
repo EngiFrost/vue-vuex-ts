@@ -1,7 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main></main>
+  <main id="main"></main>
 </template>
 
-<style></style>
+<style>
+#main {
+  height: 80vh;
+  width: 100%;
+}
+</style>
