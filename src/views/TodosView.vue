@@ -4,7 +4,7 @@
   <main id="main"></main>
 </template>
 
-<style>
+<style scoped>
 #main {
   height: 80vh;
   width: 100%;
