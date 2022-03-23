@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TodoBoard from "@/components/TodoBoard.vue";
+</script>
 
 <template>
-  <main id="main"></main>
+  <main id="main">
+    <TodoBoard />
+  </main>
 </template>
 
 <style scoped>
