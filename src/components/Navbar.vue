@@ -1,20 +1,19 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink } from "vue-router";
 
 interface Route {
-  link: string,
-  title: string,
+  link: string;
+  title: string;
 }
 
-const routes: Route[] = [
-  { link: '/', title: "Todos" }
-];
+const routes: Route[] = [{ link: "/", title: "Todos" }];
 </script>
 
 <template>
   <nav id="navbar">
-    <div id="btn-wrapper" v-for="route in routes">
-      <RouterLink to="{{route.link}}">{{ route.title }}</RouterLink>A
+    <div id="btn-wrapper" v-for="(route, idx) in routes" :key="idx">
+      <RouterLink to="{{route.link}}">{{ route.title }}</RouterLink
+      >A
     </div>
   </nav>
 </template>
