@@ -11,6 +11,5 @@ import TodoBoard from "@/components/TodoBoard.vue";
 <style scoped>
 #main {
   height: 80vh;
-  width: 100%;
 }
 </style>

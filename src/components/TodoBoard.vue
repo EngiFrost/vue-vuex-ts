@@ -18,10 +18,10 @@ const todo: Todo = {
 
 <style scoped>
 .board {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   border: 3px solid rgb(20, 89, 180);
   align-items: center;
   justify-content: center;

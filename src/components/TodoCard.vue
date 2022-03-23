@@ -17,12 +17,16 @@ const props = defineProps<ITodoCardProps>();
 <style scoped>
 .card {
   display: flex;
+  flex-direction: column;
   border: 2px solid black;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100px;
-  max-width: fit-content;
+  height: fit-content;
+  width: fit-content;
+  min-height: 60px;
+  min-width: 100px;
   padding: 5px;
+  margin: 10px;
 }
 .title {
   font-size: 16px;

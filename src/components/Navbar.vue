@@ -12,20 +12,19 @@ const routes: Route[] = [{ link: "/", title: "Todos" }];
 <template>
   <nav id="navbar">
     <div id="btn-wrapper" v-for="(route, idx) in routes" :key="idx">
-      <RouterLink to="{{route.link}}">{{ route.title }}</RouterLink
-      >A
+      <RouterLink to="{{route.link}}">{{ route.title }}</RouterLink>
     </div>
   </nav>
 </template>
 
 <style scoped>
 #navbar {
-  width: 100%;
   height: 60px;
   border: 4px solid rgb(8, 80, 104);
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  margin-bottom: 32px;
 }
 #btn-wrapper {
   padding: 10px;
