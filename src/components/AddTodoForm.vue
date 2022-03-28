@@ -1,11 +1,8 @@
 <template>
   <div class="form-wrapper">
-    <input type="text" class="input" />
-    <input type="text" class="input" />
-    <div class="btn-wrapper">
-      <button class="button">Add</button>
-      <button class="button">Clear checked</button>
-    </div>
+    <input type="text" placeholder="Enter todo title" class="input" />
+    <button class="button">Add</button>
+    <button class="button">Clear checked</button>
   </div>
 </template>
 
@@ -14,27 +11,21 @@
 <style lang="scss" scoped>
 .form-wrapper {
   display: flex;
-  flex-direction: column;
-  width: 300px;
-  border: 3px solid red;
+  align-items: center;
+  width: 400px;
+  border: 2px solid red;
+  margin: 40px 0;
 }
 .input {
   display: flex;
+  flex: 1;
   box-sizing: border-box;
-  width: 100%;
   height: 30px;
-}
-
-.btn-wrapper {
-  display: flex;
-  justify-content: space-around;
 }
 .button {
   border: 2px solid rgb(134, 134, 134);
-  border-radius: 5px;
   height: 30px;
-  width: 120px;
-  margin: 5px;
+  white-space: nowrap;
   &:hover {
     background-color: lightgray;
   }
