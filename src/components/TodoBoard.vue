@@ -12,7 +12,6 @@ import TodoCard from "@/components/TodoCard.vue";
 const todo: Todo = {
   id: "1",
   title: "test",
-  content: "test",
 };
 </script>
 
@@ -24,6 +23,6 @@ const todo: Todo = {
   box-sizing: border-box;
   border: 3px solid rgb(20, 89, 180);
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 </style>

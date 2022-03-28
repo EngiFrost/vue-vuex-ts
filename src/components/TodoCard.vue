@@ -1,7 +1,9 @@
 <template>
   <div class="card">
     <div class="title">{{ props.todo.title }}</div>
-    <div class="content">{{ props.todo.content }}</div>
+    <div>
+      <input type="checkbox" class="checkbox" />
+    </div>
   </div>
 </template>
 
@@ -14,26 +16,26 @@ interface ITodoCardProps {
 const props = defineProps<ITodoCardProps>();
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid black;
-  align-items: center;
-  justify-content: flex-start;
-  height: fit-content;
   width: fit-content;
-  min-height: 60px;
+  height: 20px;
   min-width: 100px;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   margin: 10px;
 }
 .title {
   font-size: 16px;
   font-weight: bold;
-  text-decoration: underline;
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
-.content {
-  font-size: 12px;
+
+.checkbox {
+  font-size: 16px;
 }
 </style>
