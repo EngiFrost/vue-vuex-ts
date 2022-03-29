@@ -1,14 +1,13 @@
 <template>
   <div class="card">
     <div class="title">{{ props.todo.title }}</div>
-    <div>
-      <input type="checkbox" class="checkbox" />
-    </div>
+    <Checkbox />
   </div>
 </template>
 
 <script setup lang="ts">
 import type { Todo } from "../types/TodoTypes";
+import Checkbox from "./TodoCheckbox.vue";
 
 interface ITodoCardProps {
   todo: Todo;
@@ -33,9 +32,5 @@ const props = defineProps<ITodoCardProps>();
   &::first-letter {
     text-transform: uppercase;
   }
-}
-
-.checkbox {
-  font-size: 16px;
 }
 </style>
