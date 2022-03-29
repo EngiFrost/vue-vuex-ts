@@ -1,4 +1,5 @@
 <template>
+  <!-- source: https://itchief.ru/html-and-css/styling-checkbox-and-radio#how-to -->
   <div class="card">
     <div class="title">{{ props.todo.title }}</div>
     <Checkbox />
